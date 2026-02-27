@@ -22,7 +22,7 @@ export default function SatelliteScroll() {
             const img = new Image();
             // Ensure padding with zeros like "001", "045", "120"
             const paddedIndex = i.toString().padStart(3, '0');
-            img.src = `/satellite-frames/ezgif-frame-${paddedIndex}.jpg`;
+            img.src = `${import.meta.env.BASE_URL}satellite-frames/ezgif-frame-${paddedIndex}.jpg`;
 
             img.onload = () => {
                 loadedCount++;

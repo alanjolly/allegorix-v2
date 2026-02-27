@@ -13,7 +13,7 @@ export default function ShipScroll() {
         for (let i = 1; i <= 240; i++) {
             const img = new Image();
             const frameNum = i.toString().padStart(3, '0');
-            img.src = `/ship/ezgif-frame-${frameNum}.jpg`;
+            img.src = `${import.meta.env.BASE_URL}ship/ezgif-frame-${frameNum}.jpg`;
             loadedImages.push(img);
         }
         setImages(loadedImages);
