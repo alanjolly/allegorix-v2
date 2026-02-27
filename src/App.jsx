@@ -30,7 +30,7 @@ function App() {
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-[#020617] text-slate-100 selection:bg-blue-500/30 selection:text-white">
         <motion.div className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 origin-left z-50" style={{ scaleX }} />
 
