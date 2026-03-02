@@ -254,18 +254,13 @@ export default function WhoWeHelp() {
 
                     {/* Header Section */}
                     <div className="text-center mb-16 md:mb-24 lg:mb-32">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 mb-6 reveal-text">
-                            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                            <span className="text-xs md:text-sm font-medium text-slate-300">Maritime Cybersecurity Solutions</span>
-                        </div>
+
 
                         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 md:mb-8 leading-tight reveal-text text-white">
                             Who Allegorix <span className="bg-gradient-to-br from-[#38bdf8] to-[#818cf8] bg-clip-text text-transparent italic font-light">helps</span>
                         </h1>
 
-                        <p className="text-base sm:text-lg md:text-2xl text-slate-400 max-w-4xl mx-auto leading-relaxed reveal-text px-2">
-                            We work with organizations across the maritime ecosystem, adapting content and scenarios to fit your operating reality and constraints.
-                        </p>
+
                     </div>
 
                     {/* Interactive Cards Grid */}
@@ -285,11 +280,11 @@ export default function WhoWeHelp() {
                             </div>
 
                             <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-cyan-300 transition-colors">
-                                Shipping companies & fleets
+                                Master Cybersecurity
                             </h3>
 
                             <p className="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
-                                Protect shipboard and office environments with crew-friendly training, phishing simulations and basic hygiene checks that respect watch schedules and port calls.
+                                Build enterprise-grade network simulations using GNS3 platform, simulate advanced attacks, and secure infrastructure in a risk-free virtual environment.
                             </p>
 
                             <div className="flex-1"></div>
@@ -301,19 +296,19 @@ export default function WhoWeHelp() {
                                             <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            Real-time threat monitoring
+                                            Real-time threat monitor simulations
                                         </li>
                                         <li className="flex items-center gap-2">
                                             <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            Offline-capable training modules
+                                            Simulating IDS with GNS3 & Ntfy Alerts
                                         </li>
                                         <li className="flex items-center gap-2">
                                             <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            Satellite communication security
+                                            Learning network automation in virtually simulated labs
                                         </li>
                                     </ul>
                                 </div>
@@ -437,6 +432,135 @@ export default function WhoWeHelp() {
                                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                                 </svg>
+                            </div>
+                        </div>
+
+                        {/* Card 4: Aerospace */}
+                        <div
+                            className={`help-card h-full flex flex-col rounded-2xl p-6 md:p-8 cursor-pointer group ${activeCard === 'aerospace' ? 'active' : ''}`}
+                            onMouseEnter={() => setActiveCard('aerospace')}
+                            onMouseLeave={() => handleCardMouseLeave(3)}
+                            onMouseMove={(e) => handleCardMouseMove(e, 3)}
+                        >
+                            <div className="icon-container w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-6">
+                                <svg className="w-6 h-6 md:w-7 md:h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-cyan-300 transition-colors">
+                                Aerospace cybersecurity
+                            </h3>
+                            <p className="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
+                                Secure flight systems, communication networks, and ground control infrastructure against emerging cyber threats.
+                            </p>
+                            <div className="flex-1"></div>
+                            <div className={`detail-panel ${activeCard === 'aerospace' ? 'open' : ''}`}>
+                                <div className="pt-4 border-t border-slate-700/50 mt-4">
+                                    <ul className="space-y-2 text-sm text-slate-300">
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Avionics security
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Satellite communication analysis
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Supply chain risk management
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="flex items-center text-cyan-400 font-medium text-sm mt-4 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-0 lg:translate-y-2 group-hover:translate-y-0 relative z-20">
+                                Learn more
+                                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
+                            </div>
+                        </div>
+
+                        {/* Card 5: IOT */}
+                        <div
+                            className={`help-card h-full flex flex-col rounded-2xl p-6 md:p-8 cursor-pointer group ${activeCard === 'iot' ? 'active' : ''}`}
+                            onMouseEnter={() => setActiveCard('iot')}
+                            onMouseLeave={() => handleCardMouseLeave(4)}
+                            onMouseMove={(e) => handleCardMouseMove(e, 4)}
+                        >
+                            <div className="icon-container w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-6">
+                                <svg className="w-6 h-6 md:w-7 md:h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-cyan-300 transition-colors">
+                                IOT in cybersecurity
+                            </h3>
+                            <p className="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
+                                Protect connected devices, sensor networks, and smart infrastructure from exploitation and unauthorized access.
+                            </p>
+                            <div className="flex-1"></div>
+                            <div className={`detail-panel ${activeCard === 'iot' ? 'open' : ''}`}>
+                                <div className="pt-4 border-t border-slate-700/50 mt-4">
+                                    <ul className="space-y-2 text-sm text-slate-300">
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Firmware analysis
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Protocol fuzzing
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Network segmentation
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="flex items-center text-cyan-400 font-medium text-sm mt-4 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-0 lg:translate-y-2 group-hover:translate-y-0 relative z-20">
+                                Learn more
+                                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
+                            </div>
+                        </div>
+
+                        {/* Card 6: Research */}
+                        <div
+                            className={`help-card h-full flex flex-col rounded-2xl p-6 md:p-8 cursor-pointer group ${activeCard === 'research' ? 'active' : ''}`}
+                            onMouseEnter={() => setActiveCard('research')}
+                            onMouseLeave={() => handleCardMouseLeave(5)}
+                            onMouseMove={(e) => handleCardMouseMove(e, 5)}
+                        >
+                            <div className="icon-container w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-6">
+                                <svg className="w-6 h-6 md:w-7 md:h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-cyan-300 transition-colors">
+                                Research
+                            </h3>
+                            <p className="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
+                                Advance the field of cybersecurity through vulnerability discovery, exploit development, and innovative defense mechanisms.
+                            </p>
+                            <div className="flex-1"></div>
+                            <div className={`detail-panel ${activeCard === 'research' ? 'open' : ''}`}>
+                                <div className="pt-4 border-t border-slate-700/50 mt-4">
+                                    <ul className="space-y-2 text-sm text-slate-300">
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Zero-day research
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Threat intelligence
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                            Exploit development
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="flex items-center text-cyan-400 font-medium text-sm mt-4 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-0 lg:translate-y-2 group-hover:translate-y-0 relative z-20">
+                                Learn more
+                                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
                             </div>
                         </div>
                     </div>

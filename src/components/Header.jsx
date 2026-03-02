@@ -23,11 +23,11 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8 font-medium text-sm text-[#c3a07a]">
-                <a href={`${import.meta.env.BASE_URL}#about`} className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Platform</a>
-                <a href={`${import.meta.env.BASE_URL}#services`} className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Services</a>
-                <Link to="/who-we-help" className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Who We Help</Link>
+                <Link to="/" className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Allegorix</Link>
+                <a href={`${import.meta.env.BASE_URL}home#about`} className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Marine Cybersecurity</a>
+                <a href="https://allegorix.in" target="_blank" rel="noopener noreferrer" className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Courses</a>
                 <Link to="/about-founder" className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">About the Founder</Link>
-                <a href={`${import.meta.env.BASE_URL}#contact`} className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Contact</a>
+                <a href="#contact" className="relative hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-all duration-300">Contact</a>
             </nav>
 
             {/* Mobile Menu Toggle button */}
@@ -50,11 +50,11 @@ export default function Header() {
                         className="fixed inset-0 z-40 bg-[#020617]/95 backdrop-blur-xl flex flex-col items-center justify-center min-h-screen"
                     >
                         <nav className="flex flex-col items-center gap-8 font-medium text-xl text-slate-100">
-                            <a href={`${import.meta.env.BASE_URL}#about`} onClick={closeMenu} className="hover:text-amber-300 transition-colors">Platform</a>
-                            <a href={`${import.meta.env.BASE_URL}#services`} onClick={closeMenu} className="hover:text-amber-300 transition-colors">Services</a>
-                            <Link to="/who-we-help" onClick={closeMenu} className="hover:text-amber-300 transition-colors">Who We Help</Link>
+                            <Link to="/" onClick={closeMenu} className="hover:text-amber-300 transition-colors">Allegorix</Link>
+                            <a href={`${import.meta.env.BASE_URL}home#about`} onClick={closeMenu} className="hover:text-amber-300 transition-colors">Marine Cybersecurity</a>
+                            <a href="https://allegorix.in" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="hover:text-amber-300 transition-colors">Courses</a>
                             <Link to="/about-founder" onClick={closeMenu} className="hover:text-amber-300 transition-colors">About the Founder</Link>
-                            <a href={`${import.meta.env.BASE_URL}#contact`} onClick={closeMenu} className="hover:text-amber-300 transition-colors">Contact</a>
+                            <a href="#contact" onClick={closeMenu} className="hover:text-amber-300 transition-colors">Contact</a>
                         </nav>
                     </motion.div>
                 )}
