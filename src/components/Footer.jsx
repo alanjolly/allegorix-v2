@@ -8,11 +8,11 @@ export default function Footer() {
                 <h2 className="text-3xl md:text-5xl font-display font-medium text-white tracking-wide">Contact</h2>
 
                 <div className="flex flex-col md:flex-row flex-wrap justify-center gap-10 md:gap-16 w-full mt-4">
-                    <a href="mailto:allegorix1@gmail.com" className="flex flex-col items-center gap-3 text-slate-300 hover:text-[#3b82f6] transition-all hover:-translate-y-1">
+                    <a href="mailto:ceo@allegorix.com" className="flex flex-col items-center gap-3 text-slate-300 hover:text-[#3b82f6] transition-all hover:-translate-y-1">
                         <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-[#3b82f6]/50">
                             <Mail className="w-7 h-7" />
                         </div>
-                        <span className="text-base font-medium">allegorix1@gmail.com</span>
+                        <span className="text-base font-medium">ceo@allegorix.com</span>
                     </a>
 
                     <a href="https://www.youtube.com/@Allegorix1" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 text-slate-300 hover:text-red-500 transition-all hover:-translate-y-1">
